@@ -4,7 +4,7 @@
 		<title>WebElectivo &mdash; Sistema de gestión de UAE</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,25 +37,39 @@
 	<body>
 		
 		<!-- Navbar -->
-
-
-
 		<div class="w3-top">
 			<div class="w3-bar w3-wine w3-card w3-left-align w3-large">
 				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-wine" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
 					<i class="fa fa-bars"></i>
 				</a>
-				<a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Inicio</a>
-				<a href="sesion.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Iniciar Sesión</a>
-				<a href="registrarse.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Registrarse</a>
+				<a href="index.html" class="active w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Inicio</a>
+				<div class="w3-dropdown-hover w3-right">
+					<button class="w3-button w3-hide-small w3-padding-large">Panel de Control</button>
+					<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+						<a href="constancia.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Subir Constancia</a>
+						<a href="contraseña.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cambiar Contraseña</a>
+						<a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cerrar Sesión</a>
+					</div>
+				</div>
+				<a href="perfil.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Perfil</a>
+				<a href="votaciones.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Votaciones</a>
+				<div class="w3-dropdown-hover w3-right">
+					<button class="w3-button w3-hide-small w3-padding-large">Clubes</button>
+					<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+						<a href="inscribir.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Inscribir Club</a>
+						<a href="clubes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ver Clubes</a>
+						<a href="misclubes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mis Clubes</a>
+					</div>
+				</div>
 				
 			</div>
 
-
 			<!-- Navbar on small screens -->
 			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-				<a href="sesion.html" class="w3-bar-item w3-button w3-padding-large">Iniciar Sesión</a>
-				<a href="registrarse.html" class="w3-bar-item w3-button w3-padding-large">Registrarse</a>
+				<a href="misclubes.html" class="w3-bar-item w3-button w3-padding-large">Clubes</a>
+				<a href="votaciones.html" class="w3-bar-item w3-button w3-padding-large">Votaciones</a>
+				<a href="perfil.html" class="w3-bar-item w3-button w3-padding-large">Perfil</a>
+				<a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Cerrar Sesión</a>
 			</div>
 		</div>
 
@@ -63,19 +77,19 @@
 		<header class="w3-container w3-wine w3-center" >
 
 			<div style="padding:50px">
-				<img src="img/HeaderFinal2.jpg" style="width:100%">
+				<img src="../img/HeaderFinal2.jpg" style="width:100%">
 			</div>
 
 			<!-- Slideshow -->
 			<div style="padding:25px 16px" class="w3-container">
 				<div class="w3-display-container mySlides">
-					<a href="http://www.escom.ipn.mx/expos2018/" target="blank"><img src="img/Evento1.jpg" style="width:100%"></a>
+					<a href="http://www.escom.ipn.mx/expos2018/" target="blank"><img src="../img/Evento1.jpg" style="width:100%"></a>
 				</div>
 				<div class="w3-display-container mySlides">
-					<a href="https://bit.ly/2kLMpgC" target="blank"><img src="img/Evento2.jpg" style="width:100%"></a>
+					<a href="https://bit.ly/2kLMpgC" target="blank"><img src="../img/Evento2.jpg" style="width:100%"></a>
 				</div>
 				<div class="w3-display-container mySlides">
-					<a href="http://universodeletras.unam.mx/new-creativity/" target="blank"><img src="img/Evento3.jpg" style="width:100%"></a>
+					<a href="http://universodeletras.unam.mx/new-creativity/" target="blank"><img src="../img/Evento3.jpg" style="width:100%"></a>
 				</div>
 
 				<!-- Slideshow next/previous buttons -->
@@ -93,7 +107,7 @@
 		</header>
 
 		<dir style="text-align:center;">
-			<a href="tutorial.html" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Tutorial</a>
+			<a href="../tutorial.html" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Tutorial</a>
 		</dir>
 
 		<!-- First Grid -->
@@ -109,7 +123,7 @@
 				</div>
 
 				<div class="w3-half w3-right w3-center">
-					<img src="img/Noticia5.png" style="width:100%">
+					<img src="../img/Noticia5.png" style="width:100%">
 				</div>
 			</div>
 		</div>
@@ -118,7 +132,7 @@
 		<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
 			<div class="w3-content">
 				<div class="w3-half w3-left w3-center">
-					<img src="img/Noticia6.jpg" style="width:100%">
+					<img src="../img/Noticia6.jpg" style="width:100%">
 				</div>
 
 				<div class="w3-half w3-right w3-right-align">
@@ -145,7 +159,7 @@
 				</div>
 
 				<div class="w3-half w3-right w3-center">
-					<img src="img/Noticia2.png" style="width:100%">
+					<img src="../img/Noticia2.png" style="width:100%">
 				</div>
 			</div>
 		</div>
@@ -172,7 +186,7 @@
 			<p>Powered by <a href="https://www.facebook.com/chadcarreto" target="_blank">"El Chad"</a></p>
 		</footer>
 
-		<script src="js/main.js"></script>
+		<script src="../js/main.js"></script>
 
 	</body>
 </html>
