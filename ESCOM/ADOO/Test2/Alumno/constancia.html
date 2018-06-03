@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
 	</head>
 	
 	<style>
@@ -111,38 +112,18 @@
 			</div>
 		</div>
 
-		<div class="w3-container">
-			<p class="w3-large w3-center">Cargar archivo PDF</p>
-			
-		</div>
+		<hr>
 
-			<form id="upload" action="../js/main.js" method="POST" enctype="multipart/form-data">
-				<fieldset>
-					<legend>Drag & Drop</legend>
-					<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
-					<div>
-						<label for="fileselect">Files to upload:</label>
-						<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
-						<div id="filedrag">or drop files here</div>
-					</div>
-					<div id="submitbutton">
-						<button class="w3-button" type="submit">Upload Files</button>
-					</div>
-				</fieldset>
-
+		<div class="w3-center">
+			<form method="post" enctype="multipart/form-data">
+				<input type="file" name="photo">
+				<input type="submit" value="Submit">
 			</form>
 
-			<div id="messages">
-				<p>Status Messages</p>
-			</div>
+		</div>
 
 		<div class="w3-row w3-center">
-			<div class="w3-quarter w3-container"></div>
-			<div class="w3-quarter w3-container"></div>
-			<div class="w3-quarter w3-container"></div>
-			<div class="w3-quarter w3-container">
-				<a href="index.html" class="w3-button w3-black w3-padding-large w3-left w3-large w3-margin-top">Subir Constancia</a>
-			</div>
+			<a href="index.html" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Subir Constancia</a>
 		</div>
 
 		<hr>
@@ -170,6 +151,19 @@
 		</footer>
 
 		<script src="../js/main.js"></script>
+		<script src="http://static.jsbin.com/js/render/edit.js?4.1.4"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-1656750-34', 'auto');
+		ga('require', 'linkid', 'linkid.js');
+		ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+		</script>
 
 	</body>
 </html>
